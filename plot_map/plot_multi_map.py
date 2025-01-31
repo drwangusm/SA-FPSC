@@ -2,16 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+## UDO
 # 训练结果列表
 results_files = [
-    '/final/YOLO-SA-FPSC/runs/train/yolov5/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov8n/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov10n/results.csv',
-    # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP/results.csv',
-    # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown-FPSC/results.csv',
+    '/final/SA-FPSC/runs/train/UDO/yolov5/results.csv',
+    '/final/SA-FPSC/runs/train/UDO/yolov8n/results.csv',
+    '/final/SA-FPSC/runs/train/UDO/yolov10n/results.csv',
+    # '/final/SA-FPSC/runs/train/UDO/yolov10n-SOEP/results.csv',
+    # '/final/SA-FPSC/runs/train/UDO/yolov10n-SOEP-ADown/results.csv',
+    '/final/SA-FPSC/runs/train/UDO/yolov10n-SOEP-ADown-FPSC/results.csv',
 ]
 
+# version UDO
 # 与results_files顺序对应
 custom_labels = [
     'yolov5',
@@ -21,6 +23,29 @@ custom_labels = [
     # 'SOEP-ADown',
     'SA-FPSC(Ours)',
 ]
+
+
+# ## WUDD
+# # 训练结果列表
+# results_files = [
+#     '/final/SA-FPSC/runs/train/WUDD/yolov5/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/yolov8n/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/yolov10n/results.csv',
+#     # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP/results.csv',
+#     # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/sa-fpsc-n/results.csv',
+# ]
+
+# # version UDO
+# # 与results_files顺序对应
+# custom_labels = [
+#     'yolov5',
+#     'yolov8n',
+#     'yolov10n',
+#     # 'SOEP',
+#     # 'SOEP-ADown',
+#     'SA-FPSC(Ours)',
+# ]
 
 #
 def plot_comparison(metrics, labels, custom_labels, layout=(2, 2)):
@@ -53,7 +78,7 @@ def plot_comparison(metrics, labels, custom_labels, layout=(2, 2)):
         axes[i].legend()
 
     plt.tight_layout()  # 自动调整子图布局，防止重叠
-    plt.savefig('/final/YOLO-SA-FPSC/plot_results/merge.png',dpi=300,bbox_inches='tight')
+    plt.savefig('/final/SA-FPSC/plot_results/UDO/Multi/metrics_merge.png',dpi=300,bbox_inches='tight')
     plt.show()
 
 

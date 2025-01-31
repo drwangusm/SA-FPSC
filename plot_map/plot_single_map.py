@@ -2,14 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
+## UDO
 # 训练结果列表
 results_files = [
-    '/final/YOLO-SA-FPSC/runs/train/yolov5/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov8n/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov10n/results.csv',
-    # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP/results.csv',
-    # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown/results.csv',
-    '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown-FPSC/results.csv',
+    '/final/SA-FPSC/runs/train/yolov5/results.csv',
+    '/final/SA-FPSC/runs/train/yolov8n/results.csv',
+    '/final/SA-FPSC/runs/train/yolov10n/results.csv',
+    # '/final/SA-FPSC/runs/train/yolov10n-SOEP/results.csv',
+    # '/final/SA-FPSC/runs/train/yolov10n-SOEP-ADown/results.csv',
+    '/final/SA-FPSC/runs/train/yolov10n-SOEP-ADown-FPSC/results.csv',
 ]
 
 # version UDO
@@ -22,6 +23,29 @@ custom_labels = [
     # 'SOEP-ADown',
     'SA-FPSC(Ours)',
 ]
+
+# ## WUDD
+# # 训练结果列表
+# results_files = [
+#     '/final/SA-FPSC/runs/train/WUDD/yolov5/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/yolov8n/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/yolov10n/results.csv',
+#     # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP/results.csv',
+#     # '/final/YOLO-SA-FPSC/runs/train/yolov10n-SOEP-ADown/results.csv',
+#     '/final/SA-FPSC/runs/train/WUDD/sa-fpsc-n/results.csv',
+# ]
+
+# # version UDO
+# # 与results_files顺序对应
+# custom_labels = [
+#     'yolov5',
+#     'yolov8n',
+#     'yolov10n',
+#     # 'SOEP',
+#     # 'SOEP-ADown',
+#     'SA-FPSC(Ours)',
+# ]
+
 
 def plot_metric_comparison(metric_key, metric_label,custom_labels):
     plt.figure(figsize=(10, 6))
@@ -51,7 +75,7 @@ def plot_metric_comparison(metric_key, metric_label,custom_labels):
         plt.ylabel(metric_label)
         plt.legend()
 
-        plt.savefig('/final/YOLO-SA-FPSC/plot_results/{0}.png'.format(metric_label),dpi=300,bbox_inches='tight')
+        plt.savefig('/final/SA-FPSC/plot_results/UDO/{0}.png'.format(metric_label),dpi=300,bbox_inches='tight')
         plt.show()
 
 if __name__ == '__main__':
