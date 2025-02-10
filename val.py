@@ -10,14 +10,14 @@ from ultralytics import YOLO
 #bash: nohup python val.py > val.log 2>&1 & 
 
 if __name__ == '__main__':
-    model = YOLO('/final/YOLO-SA-FPSC/runs/train/yolov8n/weights/best.pt')
-    model.val(data='/final/datasets/DUO/DUO.yaml',
+    model = YOLO('/final/SA-FPSC/runs/train/WUDD/yolov10n-SOEP/weights/best.pt')
+    model.val(data='/final/datasets/WUDD/WUDD.yaml',
               split='val',
               imgsz=640,
               batch=16,
               iou=0.6,
               # rect=False,
               save_json=True, # if you need to cal coco metrice
-              project='runs/val',
-              name='yolov8n',
+              project='runs/val/WUDD',
+              name='yolov10n-SOEP',
               )

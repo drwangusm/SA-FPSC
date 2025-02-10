@@ -10,8 +10,10 @@ if __name__ == '__main__':
     # ['yolov8m','yolov8n','yolov8s','yolov5','yolov6','yolov9s','yolov9m','yolov10m','yolov10n','yolov10s']
     #['sa','s','sa-fpsc-n','sa-fpsc-m','sa-fpsc-b','sa-fpsc-s']
 
+    #['yolov10n-FPSC','yolov10n-SOEP','yolov10n-ADown']
+
   
-    for yaml_name in ['sa-fpsc-m','sa-fpsc-b','sa-fpsc-s']:
+    for yaml_name in ['yolov10n-FPSC','yolov10n-SOEP','yolov10n-ADown']:
         model = YOLO(f'/final/SA-FPSC/models/innovations/{yaml_name}.yaml')
         model.train(data='/final/datasets/WUDD/WUDD.yaml',
                     cache=False,
