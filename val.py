@@ -10,7 +10,7 @@ from ultralytics import YOLO
 #bash: nohup python val.py > val.log 2>&1 & 
 
 if __name__ == '__main__':
-    model = YOLO('/final/SA-FPSC/runs/train/WUDD/yolov10n-SOEP/weights/best.pt')
+    model = YOLO('/final/SA-FPSC/runs/train/WUDD/yolov10n-SOEP-ADown-FPSC/weights/best.pt')
     model.val(data='/final/datasets/WUDD/WUDD.yaml',
               split='val',
               imgsz=640,

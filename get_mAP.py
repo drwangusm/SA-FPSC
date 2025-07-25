@@ -2,7 +2,7 @@ from ultralytics import YOLO
 if __name__ == '__main__':
     # 加载一个模型权重
     # model = YOLO('yolov8n.pt')  # 加载官方的模型权重作评估
-    model = YOLO('/final/SA-FPSC/runs/train/UDO/yolo11/weights/best.pt')  # 加载自定义的模型权重作评估
+    model = YOLO('/final/SA-FPSC/runs/train/WUDD/yolov10n-SOEP-ADown-FPSC/weights/best.pt')  # 加载自定义的模型权重作评估
  
    	# 评估
     metrics = model.val()  # 不需要传参，这里定义的模型会自动在训练的数据集上作评估
