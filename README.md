@@ -8,6 +8,7 @@ This repository provides the code for the paper [SA-FPSC: An Efficient Feature P
 
 ## Citation
 If this work is helpful for you, please cite our paper.
+
 '''
 @INPROCEEDINGS{11082602,
   title={SA-FPSC: An Efficient Feature Pyramid Structure for Underwater Small Target Detection}, 
@@ -15,5 +16,6 @@ If this work is helpful for you, please cite our paper.
   booktitle={2025 8th International Conference on Communication Engineering and Technology (ICCET)}, 
   year={2025},
   pages={88-94},
-  doi={10.1109/ICCET65872.2025.11082602}}
-  '''
+  doi={10.1109/ICCET65872.2025.11082602}
+}
+'''
