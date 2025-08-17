@@ -1,6 +1,7 @@
-# SA-PFSC
-This repository provides the code for the paper [SA-FPSC: An Efficient Feature Pyramid Structure for Underwater Small Target Detection](https://ieeexplore.ieee.org/document/11082602) (ICCET 2025).
+# REODNet
+This repository provides the code for the paper [SREODNet:An Real-Time End-to-End Feature Pyramid Network for Small Object Detection in Underwater Scenarios](https://xxxxxxxx) (XXXX 2025).
 
+It is improved SA-PFSC for Underwater Small Target Detection.[SA-FPSC: An Efficient Feature Pyramid Structure for Underwater Small Target Detection](https://ieeexplore.ieee.org/document/11082602) (ICCET 2025).
 
 
 

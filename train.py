@@ -13,13 +13,13 @@ if __name__ == '__main__':
     #['yolov10n-FPSC','yolov10n-SOEP','yolov10n-ADown']
 
   
-    for yaml_name in ['yolov5','yolov8n','yolov10n','yolov10n-FPSC','yolov10n-SOEP','yolov10n-ADown','yolov10n-SOEP-ADown','yolov10n-SOEP-ADown-FPSC']:
-        model = YOLO(f'/final/SA-FPSC/models/innovations/{yaml_name}.yaml')
-        model.train(data='/final/datasets/dataset_visdrone/data.yaml',
+    for yaml_name in ['yolov6']:
+        model = YOLO(f'/final/SA-FPSC/models/base/{yaml_name}.yaml')
+        model.train(data='/final/datasets/DUO/DUO.yaml',
                     cache=False,
                     imgsz=640,
                     epochs=300,
-                    batch=16, #32
+                    batch=32, #32
                     close_mosaic=0,
                     workers=4,
                     # device='0',
@@ -28,7 +28,7 @@ if __name__ == '__main__':
                     # resume=True, # 断点续训,YOLO初始化时选择last.pt
                     amp=False, # close amp
                     # fraction=0.2,
-                    project='runs/train/visdrone2019',
+                    project='runs/train/DPRC',
                     name=yaml_name,
                     )
 
